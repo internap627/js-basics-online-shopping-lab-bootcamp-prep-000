@@ -70,6 +70,17 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+   function total() {
+  // write your code here
+  var total = 0;
+
+for(var i = 0 ; i < cart.length ; i++){
+total += cart[i].itemPrice;
+}
+return total;
+
+}
+  
   if(typeof cardNumber!= "number"){
   return `Sorry, we don't have a credit card on file for you.`;
 }
